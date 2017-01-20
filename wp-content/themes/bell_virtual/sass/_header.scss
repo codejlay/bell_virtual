@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+/* header */
+.main-navigation {
+	background-color: rgba(78, 89, 112, 0.8);
+ 	position: relative;
+}
+
+.navigation-inner .container {
+	padding: 2rem;
+
+	@include bp(tablet) {
+		padding: 1rem 4rem;
+	}
+
+	@include bp(desktop-1024) {
+		padding: 3rem 2.5rem;
+	}
+
+	@include bp(desktop-1280) {
+		padding: 3rem 2rem 3rem 4rem;		
+	}
+
+	@include bp(desktop) {
+		padding: 3rem 2rem 3rem 6rem;		
+	}
+}
+
+.navigation-inner {
+	width: 100%;
+	position: absolute;
+	background-color: rgba(78, 89, 112, 0.8);
+	
+}
+
+.logo {
+	width: 200px;
+
+	@include bp(tablet) {
+		width: 500px;
+	}
+
+	@include bp(desktop-1024) {
+		width: 400px;
+	} 
+
+	@include bp(desktop) {
+		width: 500px;
+	}  
+}
+
+.logo img {
+	width: 100%;
+	height: auto;	
+}
+
+.nav-wrapper {	
+	font-size: 20px;
+	
+	display: -webkit-box;
+	display: -webkit-flex;
+
+	display: -ms-flexbox;
+
+	display: flex;		
+}
+
+/* Navigation */
+#primary-menu a {
+	color: white;
+	font-family: 'gentleman_400';	
+	text-transform: lowercase;;
+	font-size: 17px;
+	margin-right: 2rem;	
+}
+
+#primary-menu a:hover,
+.facebook-icon i:hover,
+.linkedin-icon i:hover {
+	color: #a5aaae;
+}
+
+.navigation-inner .container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+
+	display: -ms-flexbox;
+	-ms-align-items: center;
+	-ms-justify-content: space-between;	
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+}
+.linkedin-icon i,
+.facebook-icon i {
+	display: none;
+	color: white;
+	font-size: 30px;
+
+	@include bp(desktop-1024) {
+		display: block;
+		font-size: 20px;
+	}
+}
+
+.facebook-icon i {
+	padding-right: 2rem;
+}
+
+.active {
+	color: #a5aaae!important;
+}

@@ -1,0 +1,241 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+/* Footer */
+.site-footer {
+	background-color: #58585b;
+	font-family: 'gentleman_400', Arial, Helvetica;
+	font-size: 17px;
+}
+
+.site-footer .container {
+	@include bp(tablet) {
+		padding: 2rem 4rem;	
+	}
+
+	@include bp(desktop-1024) {
+		padding: 2rem 4rem;	
+	}
+
+	@include bp(desktop) {
+		padding: 4rem 6rem;	
+	}
+}
+
+.footer-block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	
+	display: -ms-flexbox;
+	-ms-flex-direction: column;
+	
+	display: flex;
+	flex-direction: column;
+
+	@include bp(tablet) {
+		-webkit-flex-direction: row-reverse;
+		-webkit-justify-content: space-between;
+
+		-ms-flex-direction: row-reverse;
+		-ms-justify-content: space-between;
+
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	@include bp(desktop) {
+		margin-bottom: 0;
+	}
+}
+
+#footer-menu li a:hover {
+	color: #a5aaae;
+}
+
+.social-inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+
+	display: -ms-flexbox;
+	-ms-flex-direction: column;
+	
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;	
+
+	@include bp(desktop-1024) {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}		
+}
+
+.social-01,
+.social-02,
+.social-03 {
+	display: -webkit-box;
+	display: -webkit-flex;	
+	-webkit-align-items: center;
+
+	display: -ms-flexbox;
+	-ms-align-items: center;
+
+	display: flex;	
+	align-items: center;
+	
+	@include bp(desktop-1024) {
+		margin-right: 1rem;	
+	}		
+
+	@include bp(desktop-1280) {
+		margin-right: 2rem;	
+	}
+
+	@include bp(desktop-1920) {
+		margin-right: 3rem;	
+	}		
+}
+
+.social i {
+	color: white;
+	margin-right: .5rem;
+
+	@include bp(tablet) {
+		margin-right: 1rem;
+	}		
+}
+
+.social a {
+	color: white;
+	text-decoration: none;
+
+	@include bp(desktop-1024) {
+		font-size: 14px;
+	}	
+
+	@include bp(desktop-1920) {
+		font-size: 17px;
+	}	
+}
+
+.social-01 a:hover,
+.social-02 a:hover,
+.social-03 a:hover,
+.social-01 i:hover,
+.social-02 i:hover,
+.social-03 i:hover,
+.copyright a:hover {
+	color: #a5aaae;
+}
+
+.copyright {
+	margin-top: 2rem;
+
+	@include bp(tablet) {
+		margin-top: 0;
+	}	
+}
+
+.copyright,
+.copyright a {	
+	color: white;	
+}
+
+.copyright p {
+	font-size: 10px;
+	text-align: center;
+
+	@include bp(tablet) {
+		font-size: 13px;
+		text-align: left;
+	}	
+}
+
+.copyright a {
+	text-decoration: none;
+}
+
+ ul#footer-menu {
+	list-style: none;	
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	@include bp(tablet) {
+		display: -webkit-box;
+		display: -webkit-flex;
+		
+		display: -ms-flexbox;
+
+		display: flex;
+	}
+}
+
+#footer-menu a {
+	text-decoration: none;
+	color: white;
+	margin-right: 2rem;
+}
+
+/* mailchimp */
+#mc_embed_signup {
+	color: white;
+}
+
+#mce-EMAIL {
+
+}
+
+input#mce-EMAIL {
+	padding: .5rem!important;
+	min-width: 250px!important;
+
+	@include bp(tablet) {
+		min-width: 225px!important;
+	}
+
+	@include bp(desktop) {
+		padding: 1rem .5rem!important;
+		min-width: 380px!important;
+	}
+}
+
+input#mc-embedded-subscribe {
+	font-family: 'gentleman_700', Arial, Helvetica!important;
+	font-size: 17px!important;	
+	font-weight: normal!important;
+	text-decoration: none!important;	
+	text-transform: lowercase;	
+	background: transparent!important;
+	border-radius: 0!important;
+	box-shadow: none!important;
+	text-shadow: none!important;
+	border: 2px solid white!important;
+	color: white!important;
+	padding: .7rem 3.5rem;
+	margin-top: 1rem;
+	transition: all 0.23s ease-in-out 0s!important;
+}
+
+input#mc-embedded-subscribe:hover {
+	background: #fff!important;		
+	color: #4e5970!important;
+}
+
+input.wpcf7-submit {
+	border-radius: 0;
+}
+
+input.wpcf7-submit:hover {
+	border-color: white;
+}
+
+input:focus,
+textarea:focus {	
+	outline: none!important;	
+	box-shadow: 0 0 10px #cbc4c0;;
+}
